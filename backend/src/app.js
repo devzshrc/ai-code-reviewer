@@ -8,9 +8,10 @@ app.use(express.json());
 // Express.js example
 app.use(
   cors({
-    origin: 'https://ai-kode-review.vercel.app/',
+    origin: 'https://ai-kode-review.vercel.app', // ← remove the trailing slash
   }),
 );
+
 app.get('/', (req, res) => {
   res.send('hi');
 });
