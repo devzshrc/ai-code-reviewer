@@ -8,7 +8,7 @@ app.use(express.json());
 // Express.js example
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://ai-kode-review.vercel.app/',
   }),
 );
 app.get('/', (req, res) => {
